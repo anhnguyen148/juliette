@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-md-center text-center">
+            <div class="col-lg-1 col-sm-12 col-md" id="screenBox">
+                <div class="row">
+                    <div class="topCard mt-4">
+                        <div class="row mt-3">
+                            <div class="col-4 text-start">
+                                <p>Cancel</p>
+                            </div>
+                            <div class="col-4">
+                                <p style="color: rgb(212, 212, 212);">Add Alarm</p>
+                            </div>
+                            <div class="col-4 text-end">
+                                <p>Save</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row timeSetup">
+                    <div class="col-6 text-start">
+                        <p>Time</p>
+                    </div>
+                    <div class="col-6 text-end">
+                        <div class="row">
+                            <div class="col-5 p-0">
+                                <!-- <input type="time" class="form-control" value="10:05 AM" /> -->
+                                <input id="timeInput" type="text" class="form-control" placeholder="00:00">
+                            </div>
+                            <div class="col-7" style="padding-left: 6px;">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col p-0">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="row">                                    
+                                    <div class="col text-start">Repeat</div>
+                                    <div class="col text-end">Never
+                                        <span><i class="fas fa-angle-right"></i></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">                                    
+                                    <div class="col text-start">Label</div>
+                                    <div class="col text-end">Alarm
+                                        <span><i class="fas fa-angle-right"></i></span>                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">                                    
+                                    <div class="col text-start">Sound</div>
+                                    <div class="col text-end">Radar
+                                        <span><i class="fas fa-angle-right"></i></span></div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">                                    
+                                    <div class="col text-start">Snooze</div>
+                                    <div class="col text-end">
+                                        <label class="switch1">
+                                            <input type="checkbox" checked>
+                                            <span class="slider1 round"></span>
+                                          </label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col keypad">
+                        <div class="row mt-1">
+                            <div class="col-4 p-0">
+                                <button class="numBtn" value="1">1</button>
+                            </div>
+                            <div class="col-4 p-0">
+                                <button class="numBtn">2</button>
+                            </div>
+                            <div class="col-4 p-0">
+                                <button class="numBtn">3</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 p-0">
+                                <button class="numBtn">4</button>
+                            </div>
+                            <div class="col-4 p-0">
+                                <button class="numBtn">5</button>
+                            </div>
+                            <div class="col-4 p-0">
+                                <button class="numBtn">6</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 p-0">
+                                <button class="numBtn">7<br/></button>
+                            </div>
+                            <div class="col-4 p-0">
+                                <button class="numBtn">8</button>
+                            </div>
+                            <div class="col-4 p-0">
+                                <button class="numBtn">9</button>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-4"></div>
+                            <div class="col-4 p-0">
+                                <button class="numBtn">0</button>
+                            </div>
+                            <div class="col-4">
+                                <i class="fas fa-backspace mt-3" style="color: #ffffff; font-size: 19px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js'></script>
+    <script src="./index.js"></script>
+</body>
+</html>
