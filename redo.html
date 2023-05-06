@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="./index.html">Original Design</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./redo.html">Redo Design</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="https://github.com/anhnguyen148/juliette" target="_blank">REPO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fanhnguyen148.github.io%2Fjuliette%2F" target="_blank">Nu Link</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-sm-12">
+                <div class="row justify-content-md-center text-center mt-5">
+                    <div class="col-lg-1 col-sm-12 col-md" id="screenBox">
+                        <div class="row">
+                            <div class="topCard mt-4">
+                                <div class="row mt-3">
+                                    <div class="col-4 text-start">
+                                        <p>Cancel</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p style="color: rgb(212, 212, 212);">Add Alarm</p>
+                                    </div>
+                                    <div class="col-4 text-end">
+                                        <p>Save</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row timeSetup">
+                            <div class="col-6 text-start">
+                                <p>Time</p>
+                            </div>
+                            <div class="col-6 text-end">
+                                <div class="row">
+                                    <div class="col-5 p-0">
+                                        <div class="form-control">
+                                            <input class="timeInput" type="text" placeholder="00"><span>:</span>
+                                            <input class="timeInput" type="text" placeholder="00">
+                                        </div>
+                                    </div>
+                                    <div class="col-7" style="padding-left: 6px;">
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col p-0">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col text-start">Repeat</div>
+                                            <div class="col text-end">Never
+                                                <span><i class="fas fa-angle-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col text-start">Label</div>
+                                            <div class="col text-end">Alarm
+                                                <span><i class="fas fa-angle-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col text-start">Sound</div>
+                                            <div class="col text-end">Radar
+                                                <span><i class="fas fa-angle-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col text-start">Snooze</div>
+                                            <div class="col text-end">
+                                                <label class="switch1">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider1 round"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col keypad">
+                                <div class="row mt-1">
+                                    <div class="col-4 p-0">
+                                        <button class="numBtn" value="1">1</button>
+                                    </div>
+                                    <div class="col-4 p-0">
+                                        <button class="numBtn">2</button>
+                                    </div>
+                                    <div class="col-4 p-0">
+                                        <button class="numBtn">3</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4 p-0">
+                                        <button class="numBtn">4</button>
+                                    </div>
+                                    <div class="col-4 p-0">
+                                        <button class="numBtn">5</button>
+                                    </div>
+                                    <div class="col-4 p-0">
+                                        <button class="numBtn">6</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4 p-0">
+                                        <button class="numBtn">7<br /></button>
+                                    </div>
+                                    <div class="col-4 p-0">
+                                        <button class="numBtn">8</button>
+                                    </div>
+                                    <div class="col-4 p-0">
+                                        <button class="numBtn">9</button>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-4"></div>
+                                    <div class="col-4 p-0">
+                                        <button class="numBtn">0</button>
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="fas fa-backspace mt-3" style="color: #ffffff; font-size: 19px;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12 col-sm-12 mt-5">
+                <h1>Tram Anh Nguyen <br> CIS 376 - SPRING 2023</h1><br>
+                <h2>REDO DESIGN</h2><br>
+                <ul>
+                    <li><p>
+                        I keep the same <strong>Repeat, Label, Sound, Snooze</strong> functioning list and only add <strong>keyboard</strong> for timer input as well as <strong>AM/PM toggle button</strong>.
+                    </p></li>
+                    <li><p>
+                        The keyboard for typing the time manually on an iPhone is a feature within the Clock app that allows users to set an alarm with more precision and accuracy. When setting an alarm, users have the option to tap on the "Time" field, which will bring up the keyboard interface.
+                    </p></li>
+                    <li><p>
+                        The keyboard for typing the time manually on the iPhone is similar to the standard keyboard layout but only includes numbers. Users can use the keyboard to enter the exact time they want the alarm to go off, with options for hours, minutes, and AM/PM.
+                    </p></li>
+                    <li><p>
+                        The advantage of using the keyboard for setting alarms is that it provides greater precision than the spinning wheel interface, allowing users to set alarms for specific times that fall outside of the 5 or 1-minute increments offered by the wheel. It's also quicker to make small adjustments to the alarm time using the keyboard rather than spinning the wheel repeatedly.
+                    </p></li>
+                    <li><p>
+                        Overall, the keyboard for typing the time manually is a useful feature for users who prefer a more precise and customizable way to set their alarms on the iPhone.
+                    </p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js'></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

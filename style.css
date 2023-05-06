@@ -5,10 +5,25 @@
     color: rgb(212, 212, 212);
 }
 
+h1, h2 {
+    text-align: center;
+}
+h2 {
+    color: orange;
+}
+
+p {
+    font-size: large;
+}
+
+#ip-screen {
+    width: 100%;
+}
+
 #screenBox {
-    height: 600px;
+    height: 700px;
     width: 370px;
-    background-color: rgb(28, 28, 30);
+    background-color: rgb(0, 0, 0);
 }
 
 .topCard {
@@ -22,6 +37,7 @@
     color: rgb(212, 212, 212);
 }
 
+
 .form-control {
     height: 34px;
     text-align: center;
@@ -29,14 +45,31 @@
     background-color: #2e2e2e;
     border: none;
     color: rgb(212, 212, 212);
+    padding: 5.5px 0px;
+}
+
+.timeInput {
+    width: 25px;
+    padding: 0px;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    color: white;
 }
 
 /* ================================ */
+.list-group-flush {
+    border-radius: 10px;
+    padding: 0px 15px;
+}
+
 .list-group-item {
     background-color: rgb(44, 44, 46);
     color: rgb(212, 212, 212);
     border: 1px solid rgb(255 255 255 / 13%);
 }
+
+/* ================================= */
 
 .switch {
     content: "AM";
@@ -70,7 +103,8 @@
     position: absolute;
     color: white;
     text-align: center;
-    content: "AM";
+    content: "AM";    
+    padding-top: 4px;
     height: 34px;
     width: 40px;
     left: 0px;
@@ -95,15 +129,6 @@ input:checked+.slider:before {
     transform: translateX(42px);
     content: "PM";
     border-radius: 5px;
-}
-
-/* Rounded sliders */
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
 }
 
 /* ============================= */
@@ -187,3 +212,6 @@ input:checked+.slider1:before {
     border: none;
     margin: 3px 3px;
 }
+/* =================================== */
+
+

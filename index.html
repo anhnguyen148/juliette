@@ -1,153 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <div class="container-fluid">
-        <div class="row justify-content-md-center text-center">
-            <div class="col-lg-1 col-sm-12 col-md" id="screenBox">
-                <div class="row">
-                    <div class="topCard mt-4">
-                        <div class="row mt-3">
-                            <div class="col-4 text-start">
-                                <p>Cancel</p>
-                            </div>
-                            <div class="col-4">
-                                <p style="color: rgb(212, 212, 212);">Add Alarm</p>
-                            </div>
-                            <div class="col-4 text-end">
-                                <p>Save</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row timeSetup">
-                    <div class="col-6 text-start">
-                        <p>Time</p>
-                    </div>
-                    <div class="col-6 text-end">
-                        <div class="row">
-                            <div class="col-5 p-0">
-                                <!-- <input type="time" class="form-control" value="10:05 AM" /> -->
-                                <input id="timeInput" type="text" class="form-control" placeholder="00:00">
-                            </div>
-                            <div class="col-7" style="padding-left: 6px;">
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="slider"></span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mb-5">
-                    <div class="col p-0">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <div class="row">                                    
-                                    <div class="col text-start">Repeat</div>
-                                    <div class="col text-end">Never
-                                        <span><i class="fas fa-angle-right"></i></span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="row">                                    
-                                    <div class="col text-start">Label</div>
-                                    <div class="col text-end">Alarm
-                                        <span><i class="fas fa-angle-right"></i></span>                                        
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="row">                                    
-                                    <div class="col text-start">Sound</div>
-                                    <div class="col text-end">Radar
-                                        <span><i class="fas fa-angle-right"></i></span></div>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="row">                                    
-                                    <div class="col text-start">Snooze</div>
-                                    <div class="col text-end">
-                                        <label class="switch1">
-                                            <input type="checkbox" checked>
-                                            <span class="slider1 round"></span>
-                                          </label>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col keypad">
-                        <div class="row mt-1">
-                            <div class="col-4 p-0">
-                                <button class="numBtn" value="1">1</button>
-                            </div>
-                            <div class="col-4 p-0">
-                                <button class="numBtn">2</button>
-                            </div>
-                            <div class="col-4 p-0">
-                                <button class="numBtn">3</button>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4 p-0">
-                                <button class="numBtn">4</button>
-                            </div>
-                            <div class="col-4 p-0">
-                                <button class="numBtn">5</button>
-                            </div>
-                            <div class="col-4 p-0">
-                                <button class="numBtn">6</button>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4 p-0">
-                                <button class="numBtn">7<br/></button>
-                            </div>
-                            <div class="col-4 p-0">
-                                <button class="numBtn">8</button>
-                            </div>
-                            <div class="col-4 p-0">
-                                <button class="numBtn">9</button>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-4"></div>
-                            <div class="col-4 p-0">
-                                <button class="numBtn">0</button>
-                            </div>
-                            <div class="col-4">
-                                <i class="fas fa-backspace mt-3" style="color: #ffffff; font-size: 19px;"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="./index.html">Original Design</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./redo.html">Redo Design</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="https://github.com/anhnguyen148/juliette" target="_blank">REPO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fanhnguyen148.github.io%2Fjuliette%2F" target="_blank">Nu Link</a>
+                </li>
+            </ul>
         </div>
+    </nav>
 
+    <div class="container-fluid">
+        <div class="row mt-5 justify-content-center">
+            <div class="col-lg-3 col-sm-12">
+                <img id="ip-screen" src="./original-design.jpg" alt="original alarm degsign">
+            </div>
+            <div class="col-lg-7 col-sm-12">
+                <h1>Tram Anh Nguyen <br> CIS 376 - SPRING 2023</h1><br>
+                <h2>ORIGINAL DESIGN</h2><br>
+                <p>The "clock" app on the iPhone that allows users to set an alarm using a spinning wheel interface, there are a few potential disadvantages to using this feature:
+                <ul>
+                    <li><p>
+                        <strong>Lack of precision:</strong> The spinning wheel interface used to set the alarm time can be imprecise, making it difficult to set the alarm for a very specific time.
+                    </p></li>
+                    <li><p>
+                        <strong>Limited options:</strong> The wheel interface only allows users to set the alarm time in 5 or 1-minute increments, which can be frustrating if you need to set an alarm for a specific time that falls between those increments.
+                    </p></li>
+                    <li><p>
+                        <strong>Difficulty in adjusting:</strong> If you need to adjust the alarm time, it can be difficult to do so quickly using the spinning wheel interface. This may be especially true if you're trying to make a small adjustment to the alarm time.
+                    </p></li>
+                    <li><p>
+                        <strong>Not user-friendly:</strong> Some people find the spinning wheel interface to be confusing or difficult to use, especially if they are not familiar with how it works.                                
+                    </p></li>
+                </ul>                  
+                <p>
+                    That said, the clock app on the iPhone offers other ways to set an alarm, such as using Siri or typing in the time manually, which may be more suitable for users who prefer greater precision and flexibility in their alarm settings.
+                </p>
+            </div>
+        </div>
     </div>
-
-
-
-
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js'></script>
     <script src="./index.js"></script>
 </body>
+
 </html>
